@@ -11,7 +11,7 @@ async function ckeckWeather(city){//ville saisie
     if(response.status == 404){//check si il y a un erreur 404
         document.querySelector(".error").style.display="block";//selectionne le premier element HTML de la classe .error puis modifie le style CSS
         document.querySelector(".weather").style.display="none";
-    }else{//sinon
+    }else{//
         var data = await response.json();//convertie en JSON pour recuperer les information méteo dans data
     }
 
